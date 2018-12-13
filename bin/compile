@@ -18,10 +18,14 @@ function indent() {
 cd $BUILD_DIR
 
 # configure
-if [ -f configure ]; then
-  echo "-----> Configuring"
-  ./configure 2>&1 | indent
-fi
+#if [ -f configure ]; then
+#  echo "-----> Configuring"
+#  ./configure 2>&1 | indent
+#fi
+
+# mod
+mkdir build && cd build
+cmake ..
 
 # make
 echo "-----> Compiling with Make"
