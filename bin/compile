@@ -23,7 +23,7 @@ cd $BUILD_DIR
 #  ./configure 2>&1 | indent
 #fi
 
-# mod
+# MOD
 mkdir build && cd build
 cmake ..
 
